@@ -1,0 +1,48 @@
+<h1>Register New User</h1>
+<br>
+
+<%= form_for :user, url: '/users' do |f| %>
+  <div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">
+  First Name:
+  </span>
+  <%= f.text_field :first_name %>
+  </div>
+  <br>
+  
+  <div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">  
+  Last Name:
+  </span>
+  <%= f.text_field :last_name %>
+  </div>
+  <br>
+
+  <div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">
+  Email:
+  </span>
+  <%= f.text_field :email %>
+  </div>
+  <br>
+
+  <div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">
+  Password:
+  </span>
+  <%= f.password_field :password %>
+  </div>
+  <br>
+
+  <div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">
+  Password Confirmation:
+  </span>
+  <%= f.password_field :password_confirmation %>
+  </div>
+  <br>
+
+  <%= f.submit "Submit" %>
+
+
+<% end %>
